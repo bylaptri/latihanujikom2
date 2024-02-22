@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -11,64 +10,63 @@
 		<meta name="Keywords" content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4"/>
 
 		<!-- Title -->
-		<title> App Perpustakaan </title>
+		<title> Azira -  Premium dashboard ui bootstrap rwd admin html5 template </title>
 
 		<!--- Favicon --->
-		<link rel="icon" href="../assets/img/brand/favicon.png" type="image/x-icon"/>
+		<link rel="icon" href="{{ asset('assets') }}/img/brand/favicon.png" type="image/x-icon"/>
 
 		<!-- Bootstrap css -->
-		<link href="../assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" id="style"/>
+		<link href="{{ asset('assets') }}/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" id="style"/>
 
 		<!--- Icons css --->
-		<link href="../assets/css/icons.css" rel="stylesheet">
+		<link href="{{ asset('assets') }}/css/icons.css" rel="stylesheet">
 
 		<!--- Style css --->
-		<link href="../assets/css/style.css" rel="stylesheet">
-		<link href="../assets/css/plugins.css" rel="stylesheet">
+		<link href="{{ asset('assets') }}/css/style.css" rel="stylesheet">
+		<link href="{{ asset('assets') }}/css/plugins.css" rel="stylesheet">
 
 		<!--- Animations css --->
-		<link href="../assets/css/animate.css" rel="stylesheet">
-
-		<div class="page">
-			<style>
-				.mb-5 {
-					text-align: center;
-				}
-			</style>
+		<link href="{{ asset('assets') }}/css/animate.css" rel="stylesheet">
 
 	</head>
-	<body class="main-body  login-img">
+	<body class="main-body bg-light  login-img">
 
 		<!-- Loader -->
 		<div id="global-loader">
-			<img src="../assets/img/loaders/loader-4.svg" class="loader-img" alt="Loader">
+			<img src="{{ asset('assets') }}/img/loaders/loader-4.svg" class="loader-img" alt="Loader">
 		</div>
 		<!-- /Loader -->
 
-		@yield('isi')
+		<!-- page -->
+	<div class="page">
+
+		<!-- main-signin-wrapper -->
+        @yield('content')
+	</div>
+		<!-- page closed -->
 		<!-- /main-signin-wrapper -->
 
-		<script src="../assets/plugins/jquery/jquery.min.js"></script>
 		<!--- JQuery min js --->
+		<script src="{{ asset('assets') }}/plugins/jquery/jquery.min.js"></script>
 
 		<!--- Bootstrap Bundle js --->
-		<script src="../assets/plugins/bootstrap/popper.min.js"></script>
-		<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="{{ asset('assets') }}/plugins/bootstrap/popper.min.js"></script>
+		<script src="{{ asset('assets') }}/plugins/bootstrap/js/bootstrap.min.js"></script>
 
 		<!--- Ionicons js --->
-		<script src="../assets/plugins/ionicons/ionicons.js"></script>
+		<script src="{{ asset('assets') }}/plugins/ionicons/ionicons.js"></script>
 
 		<!--- Moment js --->
-		<script src="../assets/plugins/moment/moment.js"></script>
+		<script src="{{ asset('assets') }}/plugins/moment/moment.js"></script>
 
 		<!--- Eva-icons js --->
-		<script src="../assets/js/eva-icons.min.js"></script>
+		<script src="{{ asset('assets') }}/js/eva-icons.min.js"></script>
 
 		<!--themecolor js-->
-		<script src="../assets/js/themecolor.js"></script>
+		<script src="{{ asset('assets') }}/js/themecolor.js"></script>
 
 		<!--- Custom js --->
-		<script src="../assets/js/custom.js"></script>
+		<script src="{{ asset('assets') }}/js/custom.js"></script>
 
 	</body>
 </html>
